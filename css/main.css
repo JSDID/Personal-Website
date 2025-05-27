@@ -1,6 +1,5 @@
 /**
  * =================================================================== 
- *
  *  Kards v1.0 Main Stylesheet
  *  url: styleshout.com
  *  03-01-2016
@@ -17,13 +16,11 @@
  *  09. header styles
  *  10. intro
  *  11. about
- *  12. resume
- *  13. portfolio
- *  14. call-to-action section
- *  15. services
- *  16. stats
- *  17. contact
- *  18. footer
+ *  12. portfolio
+ *  13. call-to-action section
+ *  14. services
+ *  15. contact
+ *  16. footer
  *
  * =================================================================== 
  */
@@ -76,7 +73,6 @@ body {
 	line-height: 3rem;
 	color: #6e6e6e;
 }
-
 /**
  * links - (_document-setup.scss)
  * -------------------------------------------------------------------
@@ -93,7 +89,6 @@ a:hover, a:focus, a:active {
 	color: #FF0077;
 	outline: 0;
 }
-
 /** 
  * ===================================================================
  * 03. typography & general theme styles - (_document-setup.scss)
@@ -268,9 +263,10 @@ hr {
 }
 
 /**
- * Lists - (_document-setup.scss)  
+ * Lists - (_document-setup.css)  
  * -------------------------------------------------------------------
  */
+
 ol {
 	list-style: decimal;
 }
@@ -316,9 +312,10 @@ dd {
 }
 
 /**
- * tables - (_document-setup.scss)  
+ * tables - (_document-setup.css)  
  * -------------------------------------------------------------------
- */
+*/
+
 table {
 	border-width: 0;
 	width: 100%;
@@ -349,9 +346,10 @@ th:last-child, td:last-child {
 }
 
 /**
- * Spacing - (_document-setup.scss)  
+ * Spacing - (_document-setup.css)  
  * -------------------------------------------------------------------
- */
+*/
+
 button, .button {
 	margin-bottom: 1.2;
 }
@@ -376,9 +374,10 @@ form,
 }
 
 /**
- * floated image - (_document-setup.scss)  
+ * floated image - (_document-setup.css)  
  * -------------------------------------------------------------------
- */
+*/
+
 img.pull-right {
 	margin: .9rem 0 0 2.4rem;
 }
@@ -387,9 +386,10 @@ img.pull-left {
 }
 
 /**
- * block grid paddings - (_document-setup.scss) 
+ * block grid paddings - (_document-setup.css) 
  * -------------------------------------------------------------------
- */
+*/
+
 .bgrid {
 	padding: 0 20px;
 }
@@ -415,9 +415,10 @@ img.pull-left {
 }
 
 /**
- * pace.js styles - minimal  - (_document-setup.scss)
+ * pace.js styles - minimal  - (_document-setup.css)
  * -------------------------------------------------------------------
- */
+*/
+
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;
@@ -440,10 +441,11 @@ img.pull-left {
 
 /** 
  * ===================================================================
- * 04. preloader - (_preloader-1.scss)
+ * 04. preloader - (_preloader-1.css)
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 #preloader {
 	position: fixed;
 	top: 0;
@@ -503,10 +505,11 @@ img.pull-left {
 
 /** 
  * ===================================================================
- * 05. forms - (_forms.scss)
+ * 05. forms - (_forms.css)
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 fieldset {
 	border: none;
 }
@@ -621,7 +624,8 @@ label > input[type="checkbox"], label > input[type="radio"] {
 /**
  * Style Placeholder Text  
  * -
- */
+*/
+
 ::-webkit-input-placeholder {
 	color: #a1a1a1;
 }
@@ -643,7 +647,8 @@ label > input[type="checkbox"], label > input[type="radio"] {
  * 06. buttons - (_button-essentials.scss)
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 .button,
 a.button,
 button,
@@ -746,15 +751,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 /** 
  * ===================================================================
- * 07. other components - (_others.scss)
+ * 07. other components - (_others.css)
  *
  * ------------------------------------------------------------------- 
- */
+*/
 
 /**
- * alert box - (_alert-box.scss)
+ * alert box - (_alert-box.css)
  * -------------------------------------------------------------------
- */
+*/
+
 .alert-box {
 	padding: 2.1rem 4rem 2.1rem 3rem;
 	position: relative;
@@ -793,7 +799,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 /**
  * drop cap 
- */
+*/
+
 .drop-cap:first-letter {
 	float: left;
 	margin: 0;
@@ -808,7 +815,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 /**
  * line definition style
- */
+*/
+
 .lining dt, .lining dd {
 	display: inline;
 	margin: 0;
@@ -830,7 +838,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 /**
  * dictionary definition style
- */
+*/
+
 .dictionary-style dt {
 	display: inline;
 	counter-reset: definitions;
@@ -859,7 +868,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *	</aside>
  *
  * --------------------------------------------------------------------- 
- */
+*/
+
 .pull-quote {
 	position: relative;
 	padding: 2.1rem 3rem 2.1rem 0px;
@@ -889,135 +899,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
- *
- * Extend this object into your markup.
- *
- * ---------------------------------------------------------------------
- */
-.stats-tabs {
-	padding: 0;
-	margin: 3rem 0;
-}
-.stats-tabs li {
-	display: inline-block;
-	margin: 0 1.5rem 3rem 0;
-	padding: 0 1.5rem 0 0;
-	border-right: 1px solid #ccc;
-}
-.stats-tabs li:last-child {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-.stats-tabs li a {
-	display: inline-block;
-	font-size: 2.5rem;
-	font-family: "poppins-bold", sans-serif;
-	border: none;
-	color: #252525;
-}
-.stats-tabs li a:hover {
-	color: #FF0077;
-}
-.stats-tabs li a em {
-	display: block;
-	margin: .6rem 0 0 0;
-	font-size: 1.4rem;
-	font-family: "poppins-regular", sans-serif;
-	color: #888888;
-}
-
-/**
- * skillbars - (_skillbars.scss)
- * -------------------------------------------------------------------
- */
-.skill-bars {
-	list-style: none;
-	margin: 6rem 0 3rem;
-}
-.skill-bars li {
-	height: .6rem;
-	background: #a1a1a1;
-	width: 100%;
-	margin-bottom: 6rem;
-	padding: 0;
-	position: relative;
-}
-.skill-bars li strong {
-	position: absolute;
-	left: 0;
-	top: -3rem;
-	font-family: "poppins-bold", sans-serif;
-	color: #313131;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	font-size: 1.5rem;
-	line-height: 2.4rem;
-}
-.skill-bars li .progress {
-	background: #313131;
-	position: relative;
-	height: 100%;
-}
-.skill-bars li .progress span {
-	position: absolute;
-	right: 0;
-	top: -3.6rem;
-	display: block;
-	font-family: "poppins-regular", sans-serif;
-	color: white;
-	font-size: 1.1rem;
-	line-height: 1;
-	background: #313131;
-	padding: .6rem .6rem;
-	border-radius: 3px;
-}
-.skill-bars li .progress span::after {
-	position: absolute;
-	left: 50%;
-	bottom: -5px;
-	margin-left: -5px;
-	border-right: 5px solid transparent;
-	border-left: 5px solid transparent;
-	border-top: 5px solid #313131;
-	content: "";
-}
-
-.skill-bars li .percent5   { width: 5%; }
-.skill-bars li .percent10  { width: 10%; }
-.skill-bars li .percent15  { width: 15%; }
-.skill-bars li .percent20  { width: 20%; }
-.skill-bars li .percent25  { width: 25%; }
-.skill-bars li .percent30  { width: 30%; }
-.skill-bars li .percent35  { width: 35%; }
-.skill-bars li .percent40  { width: 40%; }
-.skill-bars li .percent45  { width: 45%; }
-.skill-bars li .percent50  { width: 50%; }
-.skill-bars li .percent55  { width: 55%; }
-.skill-bars li .percent60  { width: 60%; }
-.skill-bars li .percent65  { width: 65%; }
-.skill-bars li .percent70  { width: 70%; }
-.skill-bars li .percent75  { width: 75%; }
-.skill-bars li .percent80  { width: 80%; }
-.skill-bars li .percent85  { width: 85%; }
-.skill-bars li .percent90  { width: 90%; }
-.skill-bars li .percent95  { width: 95%; }
-.skill-bars li .percent100 { width: 100%; }
-
-
-/** 
  * ===================================================================
- * 08. common styles (_layout.scss)
+ * 08. common styles (_layout.css)
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 .grey-section {
 	background: #ebebeb;
 }
@@ -1051,7 +938,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * responsive:
  * common styles
  * ------------------------------------------------------------------- 
- */
+*/
+
 @media only screen and (max-width:768px) {
 	.section-intro {
 		max-width: 650px;
@@ -1078,10 +966,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 /** 
  * ===================================================================
- * 09. header styles - (_layout.scss)
+ * 09. header styles - (_layout.css)
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 header {
 	position: fixed;
 	width: 100%;
@@ -1126,6 +1015,7 @@ header .logo a {
  * menu toggle - (_layout.css)
  * ------------------------------------------------------------------- 
  */
+
 .menu-toggle {
 	float: left;
 	width: 40px;
@@ -1263,7 +1153,8 @@ header .logo a {
  * responsive:
  * header styles
  * --------------------------------------------------------------- 
- */
+*/
+
 @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
@@ -1291,7 +1182,8 @@ header .logo a {
  * 10. intro - (_layout.scss) 
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 #intro {
 	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
@@ -1422,7 +1314,8 @@ header .logo a {
  * responsive:
  * Intro
  * --------------------------------------------------------------- 
- */
+*/
+
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
 		font-size: 7.6rem;
@@ -1487,7 +1380,8 @@ header .logo a {
  * 11. about - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
@@ -1573,7 +1467,8 @@ header .logo a {
  * responsive:
  * about
  * ------------------------------------------------------------------- 
- */
+*/
+
 @media only screen and (max-width:1024px) {
 	.intro-info {
 		margin-right: 0;
@@ -1618,182 +1513,13 @@ header .logo a {
 		text-align: center;
 	}
 }
-
 /** 
  * ===================================================================
- * 12. resume - (_layout.scss)
+ * 13. portfolio - (_layout.css)
  *
  * ------------------------------------------------------------------- 
- */
-#resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-}
+*/
 
-#resume .resume-header {
-	text-align: center;
-}
-#resume .resume-header h2 {
-	color: #FF0077;
-}
-
-#resume .resume-timeline {
-	max-width: 980px;
-}
-#resume .timeline-wrap {
-	position: relative;
-	margin-top: 1.5rem;
-	margin-bottom: 6rem;
-}
-#resume .timeline-wrap::before {
-	content: "";
-	display: block;
-	width: 1px;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.1);
-	position: absolute;
-	left: 35%;
-	top: 0;
-}
-#resume .timeline-block {
-	position: relative;
-	padding-top: 1.5rem;
-}
-#resume .timeline-ico {
-	height: 4.8rem;
-	width: 4.8rem;
-	line-height: 4.8rem;
-	background: #313131;
-	border-radius: 50%;
-	text-align: center;
-	color: #FFFFFF;
-	position: absolute;
-	left: 35%;
-	top: .9rem;
-	margin-left: -2.4rem;
-}
-#resume .timeline-ico i {
-	position: relative;
-	left: .05rem;
-	top: .2rem;
-}
-
-#resume .timeline-header {
-	float: left;
-	width: 35%;
-	padding-right: 90px;
-	text-align: right;
-}
-#resume .timeline-header h3 {
-	margin-bottom: 0;
-}
-#resume .timeline-header p {
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.6rem;
-	color: #888888;
-}
-#resume .timeline-content {
-	margin-left: 35%;
-	padding-left: 60px;
-}
-#resume .timeline-content h4 {
-	position: relative;
-	padding-bottom: 1.8rem;
-}
-#resume .timeline-content h4::after {
-	content: "";
-	display: block;
-	height: 3px;
-	width: 50px;
-	background: rgba(0, 0, 0, 0.2);
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
-
-/**
- * responsive:
- * resume
- * ------------------------------------------------------------------- 
- */
-@media only screen and (max-width:1024px) {
-	#resume .timeline-header {
-		padding-right: 50px;
-	}
-	#resume .timeline-header h3 {
-		font-size: 1.8rem;
-	}
-	#resume .timeline-header p {
-		font-size: 1.4rem;
-	}
-	#resume .timeline-content {
-		padding-left: 50px;
-	}
-}
-@media only screen and (max-width:768px) {
-	#resume .timeline-wrap::before {
-		left: 2.4rem;
-	}
-	#resume .timeline-ico {
-		left: 2.4rem;
-	}
-	#resume .timeline-header {
-		float: none;
-		width: auto;
-		padding-right: 15px;
-		text-align: left;
-	}
-	#resume .timeline-header h3 {
-		font-size: 2rem;
-	}
-	#resume .timeline-header p {
-		font-size: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
-	#resume .timeline-content {
-		margin: 0;
-	}
-	#resume .timeline-content h4 {
-		padding-bottom: 0;
-		padding-top: 2.1rem;
-		margin-bottom: .6rem;
-		font-size: 1.7rem;
-	}
-	#resume .timeline-content h4::after {
-		bottom: auto;
-		top: 0;
-	}
-	#resume .timeline-header, #resume .timeline-content {
-		padding-left: 7rem;
-	}
-}
-@media only screen and (max-width:480px) {
-	#resume .resume-header h2 {
-		font-size: 2.2rem;
-	}
-	#resume .timeline-wrap::before {
-		left: 1.8rem;
-	}
-	#resume .timeline-ico {
-		height: 3.6rem;
-		width: 3.6rem;
-		line-height: 3.6rem;
-		left: 1.8rem;
-		margin-left: -1.8rem;
-		font-size: 1.5rem;
-	}
-	#resume .timeline-header, #resume .timeline-content {
-		padding-left: 5.5rem;
-	}
-}
-
-
-/** 
- * ===================================================================
- * 13. portfolio - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
 #portfolio {
 	background: #FFFFFF;
 	padding-top: 12rem;
@@ -1880,7 +1606,8 @@ header .logo a {
  * responsive:
  * portfolio
  * ------------------------------------------------------------------- 
- */
+*/
+
 @media only screen and (max-width:1024px) {
 	#portfolio .folio-title {
 		font-size: 3.1rem;
@@ -1898,9 +1625,10 @@ header .logo a {
 }
 
 /**
- * Popup Modal - (_layout.scss)
+ * Popup Modal - (_layout.css)
  * ------------------------------------------------------------------
- */
+*/
+
 .popup-modal {
 	max-width: 550px;
 	background: #FFFFFF;
@@ -1976,7 +1704,7 @@ header .logo a {
 }
 
 /**
- * transition effect for modal popup - (_layout.scss)
+ * transition effect for modal popup - (_layout.css)
  * ------------------------------------------------------------------ 
  */
 
@@ -2031,10 +1759,11 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 14. call-to-action section - (_layout.scss)
+ * 14. call-to-action section - (_layout.css)
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 #cta {
 	padding-top: 10.2rem;
 	padding-bottom: 9rem;
@@ -2057,9 +1786,10 @@ header .logo a {
 }
 
 /**
- * section ads - (_layout.scss)
+ * section ads - (_layout.css)
  * ------------------------------------------------------------------- 
- */
+*/
+
 .section-ads h2 {
 	position: relative;
 	padding-bottom: 2.1rem;
@@ -2086,7 +1816,8 @@ header .logo a {
  * responsive:
  * cta
  * -------------------------------------------------------------------
- */
+*/
+
 @media only screen and (max-width:650px) {
 	.cta-content {
 		max-width: 650px;
@@ -2099,10 +1830,11 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 15. services - (_layout.scss)
+ * 15. services - (_layout.css)
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 #services {
 	background: #313131 url(../images/bg.jpg) no-repeat center;
 	-webkit-background-size: cover;
@@ -2184,80 +1916,13 @@ header .logo a {
 	background: #FF0077;
 }
 
-
 /** 
  * ===================================================================
- * 16. stats - (_layout.scss)
+ * 17. contact - (_layout.css)
  *
  * ------------------------------------------------------------------- 
- */
-#stats {
-	background: #990047;
-	padding-top: 7.2rem;
-	padding-bottom: 6rem;
-	text-align: center;
-}
-#stats .row {
-	max-width: 1440px;
-}
-#stats .stat {
-	border-left: 1px solid rgba(255, 255, 255, 0.12);
-	min-height: 17.4rem;
-}
-#stats .stat:first-child {
-	border: none;
-}
-#stats .icon-part i {
-	font-size: 4.8rem;
-	color: #000000;
-}
-#stats .stat-count {
-	color: #FFFFFF;
-	font-size: 3.6rem;
-	margin-top: 1.2rem;
-	margin-bottom: 0;
-	font-family: "poppins-medium", sans-serif;
-	color: white;
-}
-#stats .stat-title {
-	color: rgba(255, 255, 255, 0.5);
-}
+*/
 
-/**
- * responsive:
- * stats
- * -------------------------------------------------------------------
- */
-@media only screen and (max-width:1024px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-		padding-bottom: 1.5rem;
-	}
-	#stats .stat:nth-child(3n+1) {
-		border: none;
-	}
-}
-@media only screen and (max-width:768px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-	}
-	#stats .stat:nth-child(2n+1) {
-		border: none;
-	}
-}
-@media only screen and (max-width:600px) {
-	#stats .stat:nth-child(n) {
-		border: none;
-	}
-}
-
-
-/** 
- * ===================================================================
- * 17. contact - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
 #contact {
 	background: #151515;
 	padding-top: 12rem;
@@ -2438,9 +2103,10 @@ header .logo a {
 }
 
 /**
- * loader animation - (_layout.scss)
+ * loader animation - (_layout.css)
  * --------------------------------------------------------------- 
- */
+*/
+
 .s-loader {
 	margin: 1.2rem auto 3rem;
 	width: 70px;
@@ -2492,13 +2158,13 @@ header .logo a {
 	}
 }
 
-
 /** 
  * ===================================================================
- * 18. footer - (_layout.scss)
+ * 18. footer - (_layout.css)
  *
  * ------------------------------------------------------------------- 
- */
+*/
+
 footer {
 	padding-bottom: 3rem;
 	font-size: 1.4rem;
@@ -2555,7 +2221,8 @@ footer .copyright span:last-child::after {
  * responsive:
  * footer
  * -------------------------------------------------------------------
- */
+*/
+
 @media only screen and (max-width:768px) {
 	footer {
 		text-align: center;
@@ -2575,9 +2242,10 @@ footer .copyright span:last-child::after {
 }
 
 /**
- * go to top - (_layout.scss)
+ * go to top - (_layout.css)
  * ------------------------------------------------------------------- 
- */
+*/
+
 #go-top {
 	position: fixed;
 	bottom: 0;
@@ -2610,5 +2278,3 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
-
-/*# sourceMappingURL=main.css.map */
