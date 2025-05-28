@@ -1534,6 +1534,8 @@ header .logo a {
 	overflow: hidden;
 }
 #portfolio .folio-item img {
+	width: 100%;
+	height: 300px;
 	vertical-align: middle;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -1547,7 +1549,7 @@ header .logo a {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 330px;
+	height: 100%;
 	background: transparent;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
