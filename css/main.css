@@ -1,47 +1,7 @@
-/**
- * =================================================================== 
- *  Kards v1.0 Main Stylesheet
- *  url: styleshout.com
- *  ------------------------------------------------------------------
- *  TOC:
- *  01. webfonts and iconfonts
- *  02. base style overrides
- *  03. typography & general theme styles
- *  04. preloader
- *  05. forms
- *  06. buttons 
- *  07. other components
- *  08. common styles
- *  09. header styles
- *  10. intro
- *  11. about
- *  12. portfolio
- *  13. call-to-action section
- *  14. services
- *  15. contact
- *  16. footer
- *
- * =================================================================== 
- */
-
-
-/** 
- * ===================================================================
- * 01. webfonts and iconfonts - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 
-
-/** 
- * ===================================================================
- * 02. base style overrides - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
 html {
 	font-size: 10px;
 }
@@ -72,10 +32,6 @@ body {
 	line-height: 3rem;
 	color: #6e6e6e;
 }
-/**
- * links - (_document-setup.scss)
- * -------------------------------------------------------------------
- */
 a, a:visited {
 	color: #000000;
 	-moz-transition: all 0.3s ease-in-out;
@@ -88,12 +44,6 @@ a:hover, a:focus, a:active {
 	color: #FF0077;
 	outline: 0;
 }
-/** 
- * ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "poppins-semibold", sans-serif;
 	color: #313131;
@@ -158,7 +108,6 @@ p.lead {
 	}
 }
 em, i, strong, b {
-/*	font-size: 1.7rem;*/
 	line-height: 3rem;
 	font-style: normal;
 	font-weight: normal;
@@ -260,12 +209,6 @@ hr {
 	margin: 2.4rem 0 1.5rem;
 	height: 0;
 }
-
-/**
- * Lists - (_document-setup.css)  
- * -------------------------------------------------------------------
- */
-
 ol {
 	list-style: decimal;
 }
@@ -309,12 +252,6 @@ dt {
 dd {
 	margin: 0 0 0 2rem;
 }
-
-/**
- * tables - (_document-setup.css)  
- * -------------------------------------------------------------------
-*/
-
 table {
 	border-width: 0;
 	width: 100%;
@@ -343,12 +280,6 @@ th:last-child, td:last-child {
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 }
-
-/**
- * Spacing - (_document-setup.css)  
- * -------------------------------------------------------------------
-*/
-
 button, .button {
 	margin-bottom: 1.2;
 }
@@ -371,24 +302,12 @@ form,
 .ss-custom-select {
 	margin-bottom: 3rem;
 }
-
-/**
- * floated image - (_document-setup.css)  
- * -------------------------------------------------------------------
-*/
-
 img.pull-right {
 	margin: .9rem 0 0 2.4rem;
 }
 img.pull-left {
 	margin: .9rem 2.4rem 0 0;
 }
-
-/**
- * block grid paddings - (_document-setup.css) 
- * -------------------------------------------------------------------
-*/
-
 .bgrid {
 	padding: 0 20px;
 }
@@ -412,12 +331,6 @@ img.pull-left {
 		padding: 0;
 	}
 }
-
-/**
- * pace.js styles - minimal  - (_document-setup.css)
- * -------------------------------------------------------------------
-*/
-
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;
@@ -437,14 +350,6 @@ img.pull-left {
 	width: 100%;
 	height: 6px;
 }
-
-/** 
- * ===================================================================
- * 04. preloader - (_preloader-1.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
 #preloader {
 	position: fixed;
 	top: 0;
@@ -501,14 +406,6 @@ img.pull-left {
 		transform: rotate(360deg);
 	}
 }
-
-/** 
- * ===================================================================
- * 05. forms - (_forms.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
 fieldset {
 	border: none;
 }
@@ -578,8 +475,6 @@ select {
 	pointer-events: none;
 	color: #252525;
 }
-
-/* IE9 and below */
 .oldie .ss-custom-select::after {
 	display: none;
 }
@@ -619,20 +514,14 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	position: relative;
 	top: .15rem;
 }
-
-/**
- * Style Placeholder Text  
- * -
-*/
-
 ::-webkit-input-placeholder {
 	color: #a1a1a1;
 }
 :-moz-placeholder {
-	color: #a1a1a1;  /* Firefox 18- */
+	color: #a1a1a1;
 }
 ::-moz-placeholder {
-	color: #a1a1a1;  /* Firefox 19+ */
+	color: #a1a1a1;
 }
 :-ms-input-placeholder {
 	color: #a1a1a1;
@@ -640,14 +529,6 @@ label > input[type="checkbox"], label > input[type="radio"] {
 .placeholder {
 	color: #a1a1a1 !important;
 }
-
-/** 
- * ===================================================================
- * 06. buttons - (_button-essentials.scss)
- *
- * ------------------------------------------------------------------- 
-*/
-
 .button,
 a.button,
 button,
@@ -746,164 +627,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
-
-
-/** 
- * ===================================================================
- * 07. other components - (_others.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
-/**
- * alert box - (_alert-box.css)
- * -------------------------------------------------------------------
-*/
-
-.alert-box {
-	padding: 2.1rem 4rem 2.1rem 3rem;
-	position: relative;
-	margin-bottom: 3rem;
-	border-radius: 3px;
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.5rem;
-}
-.alert-box .close {
-	position: absolute;
-	right: 1.8rem;
-	top: 1.8rem;
-	cursor: pointer;
-}
-.ss-error {
-	background-color: #ffd1d2;
-	color: #e65153;
-}
-.ss-success {
-	background-color: #c8e675;
-	color: #758c36;
-}
-.ss-info {
-	background-color: #d7ecfb;
-	color: #4a95cc;
-}
-.ss-notice {
-	background-color: #fff099;
-	color: #bba31b;
-}
-
-/**
- * additional typo styles - (_additional-typo.scss)
- * -------------------------------------------------------------------
- */
-
-/**
- * drop cap 
-*/
-
-.drop-cap:first-letter {
-	float: left;
-	margin: 0;
-	padding: 1.5rem .6rem 0 0;
-	font-size: 8.4rem;
-	font-family: "poppins-bold", sans-serif;
-	line-height: 6rem;
-	text-indent: 0;
-	background: transparent;
-	color: #313131;
-}
-
-/**
- * line definition style
-*/
-
-.lining dt, .lining dd {
-	display: inline;
-	margin: 0;
-}
-.lining dt + dt:before, .lining dd + dt:before {
-	content: "\A";
-	white-space: pre;
-}
-.lining dd + dd:before {
-	content: ", ";
-}
-.lining dd + dd:before {
-	content: ", ";
-}
-.lining dd:before {
-	content: ": ";
-	margin-left: -0.2em;
-}
-
-/**
- * dictionary definition style
-*/
-
-.dictionary-style dt {
-	display: inline;
-	counter-reset: definitions;
-}
-.dictionary-style dt + dt:before {
-	content: ", ";
-	margin-left: -0.2em;
-}
-.dictionary-style dd {
-	display: block;
-	counter-increment: definitions;
-}
-.dictionary-style dd:before {
-	content: counter(definitions, decimal) ". ";
-}
-
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
- *
- * --------------------------------------------------------------------- 
-*/
-
-.pull-quote {
-	position: relative;
-	padding: 2.1rem 3rem 2.1rem 0px;
-}
-.pull-quote:before, .pull-quote:after {
-	height: 1em;
-	position: absolute;
-	font-size: 8rem;
-	font-family: Arial, Sans-Serif;
-	color: #333;
-}
-.pull-quote:before {
-	content: "\201C";
-	top: 33px;
-	left: 0;
-}
-.pull-quote:after {
-	content: '\201D';
-	bottom: -33px;
-	right: 0;
-}
-.pull-quote blockquote {
-	margin: 0;
-}
-.pull-quote blockquote:before {
-	content: none;
-}
-
-/** 
- * ===================================================================
- * 08. common styles (_layout.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
 .grey-section {
 	background: #ebebeb;
 }
@@ -932,13 +655,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
 }
-
-/**
- * responsive:
- * common styles
- * ------------------------------------------------------------------- 
-*/
-
 @media only screen and (max-width:768px) {
 	.section-intro {
 		max-width: 650px;
@@ -961,199 +677,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 		font-size: 2.4rem;
 	}
 }
-
-
-/** 
- * ===================================================================
- * 09. header styles - (_layout.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
-header {
-	position: fixed;
-	width: 100%;
-	min-height: 66px;
-	z-index: 600;
-}
-header .row {
-	position: relative;
-	min-height: 66px;
-}
-header .top-bar {
-	display: block;
-	background: #000000;
-	min-width: 220px;
-	min-height: 66px;
-	position: absolute;
-	left: 90px;
-	top: 0;
-}
-header .logo {
-	float: left;
-	margin-left: 20px;
-	margin-right: 50px;
-	margin-top: 25px;
-	position: relative;
-}
-header .logo a {
-	display: block;
-	margin: 0;
-	padding: 0;
-	border: none;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	width: 92px;
-	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
-}
-
-/**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
-
-.menu-toggle {
-	float: left;
-	width: 40px;
-	height: 40px;
-	margin-left: 20px;
-	margin-top: 13px;
-	display: block;
-	position: relative;
-}
-.menu-toggle span {
-	display: block;
-	background-color: #FF0077;
-	width: 24px;
-	height: 3px;
-	margin-top: -1.5px;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	position: absolute;
-	right: 8px;
-	top: 50%;
-	bottom: auto;
-	left: auto;
-	-moz-transition: background 0.2s ease-in-out;
-	-o-transition: background 0.2s ease-in-out;
-	-webkit-transition: background 0.2s ease-in-out;
-	-ms-transition: background 0.2s ease-in-out;
-	transition: background 0.2s ease-in-out;
-}
-.menu-toggle span::before, .menu-toggle span::after {
-	content: '';
-	width: 100%;
-	height: 100%;
-	background-color: inherit;
-	position: absolute;
-	left: 0;
-	-moz-transition-duration: 0.2s, 0.2s;
-	-o-transition-duration: 0.2s, 0.2s;
-	-webkit-transition-duration: 0.2s, 0.2s;
-	-ms-transition-duration: 0.2s, 0.2s;
-	transition-duration: 0.2s, 0.2s;
-	-moz-transition-delay: 0.2s, 0s;
-	-o-transition-delay: 0.2s, 0s;
-	-webkit-transition-delay: 0.2s, 0s;
-	-ms-transition-delay: 0.2s, 0s;
-	transition-delay: 0.2s, 0s;
-}
-.menu-toggle span::before {
-	top: -8px;
-	-moz-transition-property: top, transform;
-	-o-transition-property: top, transform;
-	-webkit-transition-property: top, transform;
-	-ms-transition-property: top, transform;
-	transition-property: top, transform;
-}
-.menu-toggle span::after {
-	bottom: -8px;
-	-moz-transition-property: bottom, transform;
-	-o-transition-property: bottom, transform;
-	-webkit-transition-property: bottom, transform;
-	-ms-transition-property: bottom, transform;
-	transition-property: bottom, transform;
-}
-
-/* is clicked */
-.menu-toggle.is-clicked span {
-	background-color: rgba(255, 0, 119, 0);
-}
-.menu-toggle.is-clicked span::before, .menu-toggle.is-clicked span::after {
-	background-color: #ff0077;
-	-moz-transition-delay: 0s, 0.2s;
-	-o-transition-delay: 0s, 0.2s;
-	-webkit-transition-delay: 0s, 0.2s;
-	-ms-transition-delay: 0s, 0.2s;
-	transition-delay: 0s, 0.2s;
-}
-.menu-toggle.is-clicked span::before {
-	top: 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-.menu-toggle.is-clicked span::after {
-	bottom: 0;
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-
-/* navigation panel */
-#main-nav-wrap {
-	display: block;
-	width: 100%;
-	font-family: "poppins-medium", sans-serif;
-	font-size: 1.5rem;
-	position: absolute;
-	top: 100%;
-	left: 0;
-}
-
-/* dropdown nav */
-.main-navigation {
-	background: #000000;
-	padding: 24px 30px 42px;
-	margin: 0;
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: none;
-}
-.main-navigation > li {
-	display: block;
-	height: auto;
-	text-align: left;
-	padding: 0;
-}
-.main-navigation li a {
-	display: block;
-	color: #FFFFFF;
-	width: auto;
-	padding: 15px 0;
-	line-height: 16px;
-	border: none;
-}
-.main-navigation li a:hover {
-	color: #FF0077;
-	padding-left: 1rem;
-}
-.main-navigation li.current > a {
-	background: none;
-	color: #FF0077;
-}
-
-/**
- * responsive:
- * header styles
- * --------------------------------------------------------------- 
-*/
-
 @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
@@ -1174,15 +697,6 @@ header .logo a {
 		left: 25px;
 	}
 }
-
-
-/** 
- * ===================================================================
- * 10. intro - (_layout.scss) 
- *
- * ------------------------------------------------------------------- 
-*/
-
 #intro {
 	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
@@ -1205,7 +719,6 @@ header .logo a {
 	background: #111111;
 	opacity: .85;
 }
-
 .intro-content {
 	display: table-cell;
 	vertical-align: middle;
@@ -1286,7 +799,6 @@ header .logo a {
 	position: relative;
 	left: 1.2rem;
 }
-
 .intro-social {
 	display: block;
 	position: absolute;
@@ -1308,13 +820,6 @@ header .logo a {
 .intro-social li a:hover, .intro-social li a:focus {
 	color: #cc005f;
 }
-
-/**
- * responsive:
- * Intro
- * --------------------------------------------------------------- 
-*/
-
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
 		font-size: 7.6rem;
@@ -1372,15 +877,6 @@ header .logo a {
 		font-size: 2.4rem;
 	}
 }
-
-
-/** 
- * ===================================================================
- * 11. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
-*/
-
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
@@ -1390,7 +886,7 @@ header .logo a {
 	margin-bottom: 3rem;
 }
 #about .section-intro h2 {
-    color: #FF0077;
+	color: #FF0077;
 }
 .intro-info {
 	margin-top: 4.2rem;
@@ -1412,7 +908,6 @@ header .logo a {
 	text-align: left;
 	padding-left: 13rem;
 }
-
 .about-content {
 	position: relative;
 	text-align: left;
@@ -1451,7 +946,6 @@ header .logo a {
 .about-content .skill-bars {
 	margin-top: 6rem;
 }
-
 .button-section {
 	text-align: center;
 }
@@ -1461,13 +955,6 @@ header .logo a {
 .button-section [class*="col-"] .button:first-child {
 	margin-right: 4rem;
 }
-
-/**
- * responsive:
- * about
- * ------------------------------------------------------------------- 
-*/
-
 @media only screen and (max-width:1024px) {
 	.intro-info {
 		margin-right: 0;
@@ -1512,22 +999,14 @@ header .logo a {
 		text-align: center;
 	}
 }
-/** 
- * ===================================================================
- * 13. portfolio - (_layout.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
 #portfolio {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
 #portfolio h2 {
-    color: #FF0077;
+	color: #FF0077;
 }
-
 #portfolio .folio-item {
 	padding: 0;
 	position: relative;
@@ -1543,7 +1022,6 @@ header .logo a {
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-
 #portfolio .overlay {
 	position: absolute;
 	top: 0;
@@ -1557,7 +1035,6 @@ header .logo a {
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-
 #portfolio .folio-item-table {
 	display: table;
 	width: 100%;
@@ -1575,7 +1052,6 @@ header .logo a {
 	position: relative;
 	left: -100%;
 }
-
 #portfolio .folio-title {
 	color: #FFFFFF;
 	font-size: 3.3rem;
@@ -1602,13 +1078,6 @@ header .logo a {
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
-
-/**
- * responsive:
- * portfolio
- * ------------------------------------------------------------------- 
-*/
-
 @media only screen and (max-width:1024px) {
 	#portfolio .folio-title {
 		font-size: 3.1rem;
@@ -1624,12 +1093,6 @@ header .logo a {
 		font-size: 2.2rem;
 	}
 }
-
-/**
- * Popup Modal - (_layout.css)
- * ------------------------------------------------------------------
-*/
-
 .popup-modal {
 	max-width: 550px;
 	background: #FFFFFF;
@@ -1703,13 +1166,6 @@ header .logo a {
 		margin: 0 20px;
 	}
 }
-
-/**
- * transition effect for modal popup - (_layout.css)
- * ------------------------------------------------------------------ 
- */
-
-/* overlay at start */
 .mfp-fade.mfp-bg {
 	opacity: 0;
 	-moz-transition: all 0.3s ease-in-out;
@@ -1718,18 +1174,12 @@ header .logo a {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-
-/* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
 	opacity: .9;
 }
-
-/* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {
 	opacity: 0;
 }
-
-/* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
 	opacity: 0;
 	-webkit-transform: translateY(-100%);
@@ -1741,101 +1191,18 @@ header .logo a {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-
-/* content animate in */
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
 	opacity: 1;
 	-webkit-transform: translateY(0);
 	-ms-transform: translateY(0);
 	transform: translateY(0);
 }
-
-/* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
 	-webkit-transform: translateY(-100%);
 	-ms-transform: translateY(-100%);
 	transform: translateY(-100%);
 }
-
-/** 
- * ===================================================================
- * 14. call-to-action section - (_layout.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
-#cta {
-	padding-top: 10.2rem;
-	padding-bottom: 9rem;
-	text-align: center;
-}
-#cta p.lead {
-	color: #6e6e6e;
-}
-.cta-content {
-	max-width: 640px;
-}
-.cta-thumb {
-	display: inline-block;
-	margin-bottom: 1.2rem;
-}
-.cta-thumb img {
-	height: 7.8rem;
-	width: 7.8rem;
-	border-radius: 50%;
-}
-
-/**
- * section ads - (_layout.css)
- * ------------------------------------------------------------------- 
-*/
-
-.section-ads h2 {
-	position: relative;
-	padding-bottom: 2.1rem;
-}
-.section-ads h2::after {
-	content: "";
-	display: block;
-	height: 3px;
-	width: 80px;
-	background: rgba(0, 0, 0, 0.2);
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	margin-left: -40px;
-}
-.section-ads h2 a, .section-ads h2 a:visited {
-	color: #313131;
-}
-.section-ads span {
-	color: #3F0D39;
-}
-
-/**
- * responsive:
- * cta
- * -------------------------------------------------------------------
-*/
-
-@media only screen and (max-width:650px) {
-	.cta-content {
-		max-width: 650px;
-	}
-	.cta-content h2 {
-		font-size: 2.4rem;
-	}
-}
-
-
-/** 
- * ===================================================================
- * 15. services - (_layout.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
 #services {
 	background: #313131 url(../images/bg.jpg) no-repeat center;
 	-webkit-background-size: cover;
@@ -1855,11 +1222,9 @@ header .logo a {
 	background: #151515;
 	opacity: .9;
 }
-
 #services .section-intro {
 	margin-bottom: 1.8rem;
 }
-
 #services .section-intro h1 {
 	color: white;
 }
@@ -1894,220 +1259,6 @@ header .logo a {
 .services-list .desc {
 	color: rgba(255, 255, 255, 0.6);
 }
-
-/* pagination */
-.owl-pagination {
-	text-align: center;
-	width: 100%;
-	margin: .6rem 0 0;
-}
-.owl-theme .owl-controls .owl-page {
-	display: inline-block;
-}
-.owl-theme .owl-controls .owl-page span {
-	display: block;
-	width: 1.2rem;
-	height: 1.2rem;
-	margin: 1.2rem .8rem 0 .8rem;
-	border-radius: 50%;
-	display: inline-block;
-	background: #FFFFFF;
-}
-.owl-theme .owl-controls .owl-page.active span {
-	background: #FF0077;
-}
-
-/** 
- * ===================================================================
- * 17. contact - (_layout.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
-#contact {
-	background: #151515;
-	padding-top: 12rem;
-	padding-bottom: 7.2rem;
-}
-#contact .section-intro h1 {
-	color: white;
-}
-#contact .section-intro h2 {
-	color: #FF0077;
-}
-#contact .section-intro p {
-	color: rgba(255, 255, 255, 0.7);
-}
-
-/* contact form */
-.contact-form {
-	max-width: 740px;
-}
-
-.contact-form ::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, 0.3);
-}
-.contact-form :-moz-placeholder {
-	color: rgba(255, 255, 255, 0.3);  /* Firefox 18- */
-}
-.contact-form ::-moz-placeholder {
-	color: rgba(255, 255, 255, 0.3);  /* Firefox 19+ */
-}
-.contact-form :-ms-input-placeholder {
-	color: rgba(255, 255, 255, 0.3);
-}
-.contact-form .placeholder {
-	color: rgba(255, 255, 255, 0.3) !important;
-}
-
-#contact form {
-	margin-top: 0;
-	margin-bottom: 3rem;
-}
-#contact form .form-field {
-	position: relative;
-}
-#contact form .form-field:before, #contact form .form-field:after {
-	content: "";
-	display: table;
-}
-#contact form .form-field:after {
-	clear: both;
-}
-#contact form .form-field label {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.1rem;
-	line-height: 2.4rem;
-	position: absolute;
-	bottom: -1.2rem;
-	right: .6rem;
-	text-transform: uppercase;
-	letter-spacing: .1rem;
-	padding: 0 2rem;
-	margin: 0;
-	color: #FFFFFF;
-	background: #FF0077;
-}
-#contact form .form-field label::after {
-	position: absolute;
-	left: -5px;
-	top: 50%;
-	margin-top: -6px;
-	border-top: 5px solid transparent;
-	border-bottom: 5px solid transparent;
-	border-right: 5px solid #FF0077;
-	content: "";
-}
-#contact input[type="text"],
-#contact input[type="password"],
-#contact input[type="email"],
-#contact textarea {
-	width: 100%;
-	color: rgba(255, 255, 255, 0.7);
-	margin-bottom: 0;
-	border: none;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-#contact input[type="text"],
-#contact input[type="password"],
-#contact input[type="email"] {
-	height: 6.6rem;
-	padding: 1.8rem 2rem;
-}
-#contact input[type="text"]:focus,
-#contact input[type="password"]:focus,
-#contact input[type="email"]:focus {
-	border-color: #FF0077;
-	color: #FFFFFF;
-}
-#contact textarea {
-	min-height: 20rem;
-	padding: 1.8rem 2rem;
-}
-#contact textarea:focus {
-	border-color: #FF0077;
-	color: #FFFFFF;
-}
-#contact button.submitform {
-	font-size: 1.5rem;
-	display: block;
-	letter-spacing: .2rem;
-	height: 6.6rem;
-	line-height: 6.6rem;
-	padding: 0 3rem;
-	margin-top: 4.8rem;
-	width: 100%;
-	background: #FF0077;
-	color: #FFFFFF;
-}
-#contact button.submitform:hover, #contact button.submitform:focus {
-	background: #cc005f;
-}
-#message-warning, #message-success {
-	display: none;
-	background: #0d0d0d;
-	border-radius: 3px;
-	padding: 3rem;
-	margin-bottom: 3.6rem;
-	width: 100%;
-}
-#message-warning {
-	color: #fa0003;
-}
-#message-success {
-	color: #FF0077;
-}
-#message-warning i, #message-success i {
-	margin-right: 10px;
-}
-
-/* form loader */
-#submit-loader {
-	display: none;
-	position: relative;
-	left: 0;
-	top: 1.8rem;
-	width: 100%;
-	text-align: center;
-}
-#submit-loader .text-loader {
-	display: none;
-	font-family: "poppins-bold", sans-serif;
-	color: #FFFFFF;
-	letter-spacing: .3rem;
-	text-transform: uppercase;
-}
-.oldie #submit-loader .s-loader {
-	display: none;
-}
-.oldie #submit-loader .text-loader {
-	display: block;
-}
-.contact-info {
-	margin: 4.8rem auto 0;
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.5rem;
-	text-align: center;
-}
-.contact-info .collapse {
-	padding: 0;
-}
-.contact-info .icon {
-	margin-bottom: 2.1rem;
-}
-.contact-info .icon i {
-	font-size: 4.2rem;
-	color: #FFFFFF;
-}
-.contact-info h5 {
-	color: #FF0077;
-}
-
-/**
- * loader animation - (_layout.css)
- * --------------------------------------------------------------- 
-*/
-
 .s-loader {
 	margin: 1.2rem auto 3rem;
 	width: 70px;
@@ -2158,14 +1309,6 @@ header .logo a {
 		transform: scale(1);
 	}
 }
-
-/** 
- * ===================================================================
- * 18. footer - (_layout.css)
- *
- * ------------------------------------------------------------------- 
-*/
-
 footer {
 	padding-bottom: 3rem;
 	font-size: 1.4rem;
@@ -2217,13 +1360,6 @@ footer .copyright span::after {
 footer .copyright span:last-child::after {
 	display: none;
 }
-
-/**
- * responsive:
- * footer
- * -------------------------------------------------------------------
-*/
-
 @media only screen and (max-width:768px) {
 	footer {
 		text-align: center;
@@ -2241,12 +1377,6 @@ footer .copyright span:last-child::after {
 		display: none;
 	}
 }
-
-/**
- * go to top - (_layout.css)
- * ------------------------------------------------------------------- 
-*/
-
 #go-top {
 	position: fixed;
 	bottom: 0;

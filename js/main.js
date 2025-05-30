@@ -155,7 +155,7 @@
 
 	/*----------------------------------------------------- */
 	/* Back to top
-        ------------------------------------------------------- */
+		------------------------------------------------------- */
 	var pxShow = 300; // height on which the button will show
 	var fadeInTime = 400; // how slow/fast you want the button to show
 	var fadeOutTime = 400; // how slow/fast you want the button to hide
