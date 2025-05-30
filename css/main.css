@@ -1259,6 +1259,26 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .services-list .desc {
 	color: rgba(255, 255, 255, 0.6);
 }
+.owl-pagination {
+	text-align: center;
+	width: 100%;
+	margin: .6rem 0 0;
+}
+.owl-theme .owl-controls .owl-page {
+	display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 1.2rem .8rem 0 .8rem;
+	border-radius: 50%;
+	display: inline-block;
+	background: #FFFFFF;
+}
+.owl-theme .owl-controls .owl-page.active span {
+	background: #FF0077;
+}
 .s-loader {
 	margin: 1.2rem auto 3rem;
 	width: 70px;
