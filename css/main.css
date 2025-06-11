@@ -880,7 +880,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
 }
 #about .section-intro {
 	margin-bottom: 3rem;
@@ -892,17 +891,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-top: 4.2rem;
 	margin-right: -30px;
 	margin-left: -30px;
-}
-.intro-info img {
-	height: 10rem;
-	width: 8rem;
-	border-radius: 50%;
-	margin: .9rem 0 0 0;
-	float: left;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
 }
 .intro-info .lead {
 	text-align: left;
