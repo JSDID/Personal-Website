@@ -1,9 +1,5 @@
 # Personal Website - Oleksandr Dolinsky
 
-## 📋 Project Overview
-
-A modern, responsive personal portfolio website for Oleksandr Dolinsky, a Front-End Developer specializing in React and Vue development. This website showcases professional experience, portfolio projects, and provides contact information for potential clients and employers.
-
 ## 🎯 Key Features
 
 - **Responsive Design**: Fully adaptive layout that works seamlessly across all devices
@@ -49,7 +45,6 @@ Personal-Website/
 ## 🎨 Design Features
 
 - **Hero Section**: Eye-catching introduction with call-to-action buttons
-- **About Section**: Professional summary and downloadable CV
 - **Portfolio Gallery**: Grid layout with modal popups for project details
 - **Services Section**: Highlighted expertise areas
 - **Social Integration**: Easy access to professional networks
