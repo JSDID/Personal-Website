@@ -1,7 +1,5 @@
 # Personal Website - Oleksandr Dolinsky
 
-![Personal Website Preview](https://github.com/user-attachments/assets/e095ba27-4dee-4f03-add9-8ef8568bb3a1)
-
 ## 📋 Project Overview
 
 A modern, responsive personal portfolio website for Oleksandr Dolinsky, a Front-End Developer specializing in React and Vue.js development. This website showcases professional experience, portfolio projects, and provides contact information for potential clients and employers.
