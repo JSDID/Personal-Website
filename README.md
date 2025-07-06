@@ -72,13 +72,6 @@ The website is built with a mobile-first approach and includes:
 - Efficient font loading
 - Cached static assets
 
-## 📞 Contact Information
-
-- **Viber**: +380973234711
-- **Telegram**: @sasha_08170
-- **LinkedIn**: [linkedin.com/in/jsdid](https://www.linkedin.com/in/jsdid/)
-- **GitHub**: [github.com/JSDID](https://github.com/JSDID)
-
 ## 🎯 Target Audience
 
 - Potential clients seeking web development services
