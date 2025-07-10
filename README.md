@@ -77,7 +77,3 @@ The website is built with a mobile-first approach and includes:
 ## 📄 License
 
 This project is a personal portfolio website. All rights reserved to Oleksandr Dolinsky.
-
----
-
-**Live Demo**: [Personal Website](https://jsdid.github.io/About-Me/)
